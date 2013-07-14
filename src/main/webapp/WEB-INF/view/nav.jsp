@@ -5,7 +5,7 @@
 
 <div class="navbar">
   <div class="navbar-inner">
-    <a class="brand" href="http://www.love320.com" title="冰迪网络-出口">PS320 - WEB </a>
+    <a class="brand" href="http://www.love320.com" title="冰迪网络-出品">PS320 - WEB </a>
     <ul class="nav">
       <li <c:if test="${pagetype == 'server'}">class="active"</c:if> ><a href="${base}/server.do">服务管理</a></li>
       <li <c:if test="${pagetype == 'connection'}">class="active"</c:if> ><a href="${base}/connection.do">连接管理</a></li>
