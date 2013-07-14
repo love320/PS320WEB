@@ -62,6 +62,7 @@
 			  <button type="submit" class="btn btn-primary">启动服务</button>
 			</form></div>
 
+
 	<!-- javascript -->
 	<script src="${base}/js/jquery.js"></script>
 	<script src="${base}/js/bootstrap.js"></script>
