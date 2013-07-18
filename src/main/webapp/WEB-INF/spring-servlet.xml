@@ -8,7 +8,7 @@
 	">
 	
 	<!-- 应用的配置文件 -->
-	<context:property-placeholder location="classpath:app.properties" ignore-unresolvable="true" /> 
+	<context:property-placeholder location="classpath:ps320.config" ignore-unresolvable="true" /> 
 		
 	<context:component-scan base-package="app" />
 	
@@ -21,8 +21,8 @@
     </bean>
     
     <bean id="socketData" class="app.web.SocketData">
-    	<property name="ip" value="${ip}" />
-    	<property name="port" value="${port}"/>
+    	<property name="ip" value="${PROXY_HOST}" />
+    	<property name="port" value="${MANAGERPROXY}"/>
     </bean>
     
     <bean id="p2pserver" class="com.love320.ps320.go.P2PServer"/>
