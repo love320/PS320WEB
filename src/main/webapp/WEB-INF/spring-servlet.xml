@@ -24,5 +24,7 @@
     	<property name="ip" value="${ip}" />
     	<property name="port" value="${port}"/>
     </bean>
+    
+    <bean id="p2pserver" class="com.love320.ps320.go.P2PServer"/>
 
 </beans>
