@@ -23,6 +23,13 @@ public class Manage {
 		return "homepage";
 	}
 	
+	@RequestMapping("/status")
+	public String homestatus(Model model){
+		model.addAttribute("pagetype", "status");
+		model.addAttribute("status", cmd.st());
+		return "status";
+	}
+	
 	@RequestMapping("/server")
 	public String pageServerSocket(Model model){
 		List list = cmd.lss();

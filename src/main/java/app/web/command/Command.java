@@ -36,4 +36,10 @@ public class Command {
 		return true;
 	}
 	
+	public boolean st(){
+		St ls = new St(sd);
+		return ls.action();
+	}
+	
+	
 }
