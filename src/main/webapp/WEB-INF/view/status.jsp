@@ -12,8 +12,15 @@
 
 <c:import  url="nav.jsp" />
 
-          <div class="bs-docs-example">
-           <img alt=" ${status}" src="${base}/img/status${status}.jpg">
+          <div class="container">
+          <h5>
+            <c:if test="${status == true}">
+			<p class="text-center text-success"><i class="icon-signal"></i>.通信正常.</p>
+			</c:if>
+			<c:if test="${status == false}">
+			<p class="text-center text-error"><i class="icon-remove"></i>.通信关闭.</p>
+			</c:if>
+          </h5>
           </div>
 
 	<!-- javascript -->

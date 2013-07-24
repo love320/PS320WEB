@@ -15,7 +15,8 @@ public class St {
 	public boolean action(){
 		String lss = sd.send(code);
 		if(lss == null) return false;
-		return Boolean.valueOf(lss).booleanValue();
+		String[] lssrow = lss.split("\r\n");
+		return Boolean.valueOf(lssrow[0]).booleanValue();
 	}
 	
 	
